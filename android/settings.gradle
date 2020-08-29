@@ -1,0 +1,3 @@
+rootProject.name = 'NeumorphismUI'
+
+include ':app'
