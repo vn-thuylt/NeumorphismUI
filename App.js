@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, ScrollView, Alert, Image } from 'react-native';
 
-import { NeuButton, NeuView } from '@neumorphism-ui';
+import { NeuButton, NeuView, NeumorphismButton } from '@neumorphism-ui';
 
 export default class App extends Component {
   render() {
@@ -156,6 +156,22 @@ export default class App extends Component {
             CONTENT STYLING
           </Text>
         </NeuView>
+
+        <View style={styles.body}>
+          <View style={styles.sectionContainer}>
+            <NeumorphismButton size={8} style={styles.button1}>
+              <Text>Hello</Text>
+            </NeumorphismButton>
+
+            <NeumorphismButton size={8} style={styles.button2}>
+              <Text>Hello</Text>
+            </NeumorphismButton>
+
+            <NeumorphismButton size={8}>
+              <Text>Hello2</Text>
+            </NeumorphismButton>
+          </View>
+        </View>
       </ScrollView>
     );
   }
@@ -166,5 +182,20 @@ const styles = StyleSheet.create({
     flex: 1,
     width: '100%',
     backgroundColor: '#e0e5ec'
+  },
+  body: {
+    backgroundColor: '#55b9f3',
+    marginTop: 30
+  },
+  sectionContainer: {
+    marginTop: 32,
+    marginBottom: 32,
+    paddingHorizontal: 24
+  },
+  button1: {
+    padding: 60
+  },
+  button2: {
+    padding: 30
   }
 });

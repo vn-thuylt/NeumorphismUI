@@ -8,6 +8,7 @@
   "dependencies": {
     "neumorphism-ui": "^1.0.2",
     "react": "16.8.3",
-    "react-native": "0.59.9"
+    "react-native": "0.59.9",
+    "react-native-linear-gradient": "^2.5.6"
   }
 }
